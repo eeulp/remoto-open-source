@@ -16,7 +16,7 @@ function fetchTasks() {
                 taskItem.innerHTML = `
                     <span class="${task.completed ? 'completed' : ''}">${task.description}</span>
                     <div>
-                        <button onclick="toggleTask(${task.id}, ${task.completed})">${task.completed ? 'Desfazer' : 'Completo'}</button>
+                        <button onclick="toggleTask(${task.id}, ${task.completed})">${task.completed ? 'Desfazer' : 'Terminado'}</button>
                         <button onclick="deleteTask(${task.id})">Deletar</button>
                     </div>
                 `;
